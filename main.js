@@ -35,9 +35,9 @@ function calculaTempo(tempoObjetivo) {
     minutos %= 60;
     horas %= 24;
     if (tempoFinal > 0) {
-        return dias + " dias " + horas + " horas " + minutos + " minutos " + segundos + " segundos";
+        return [dias,horas,segundos];
     } else {
-        return "Prazo Finalizado";
+        return [0, 0, 0, 0];
     }
 }
 
